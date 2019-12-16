@@ -10,6 +10,10 @@ app.get('/', function(request, response) {
   response.send('Hello World!')
 });
 
+app.get('/whosyourdaddy', function(req, res) {
+  res.send('Boo-Ya!')
+});
+
 app.get('/users', function(req, res) {
   // Hard coding for simplicity. Pretend this hits a real database
   res.json([
